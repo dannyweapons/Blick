@@ -1,0 +1,244 @@
+@charset "utf-8";
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1{border-bottom:1px solid;}
+.row2{border-bottom:1px solid;}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5{border-top:1px solid;}
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{font-family: HelveticaNeue; padding:160px 0;}
+
+#pageintro li article{display:block; max-width:75%; margin:0 auto; text-align:center;}
+#pageintro li article *{margin:0;}
+#pageintro li p:first-of-type{margin-bottom:10px;font-size:50px;}
+#pageintro li .heading{margin-bottom:30px; font-size:70px;}
+#pageintro li p:nth-of-type(2){line-height:1.5rem;font-size:70px;}
+#pageintro li footer{margin-top:40px;}
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Content */
+.container .content{}
+
+.sectiontitle{display:block; max-width:65%; margin:0 auto 60px; text-align:center;}
+.sectiontitle *{margin:0;}
+
+.services li:nth-child(-n+3){margin-bottom:50px;}/* Adds bottom margin to the first three elements only */
+.services > li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+.services article{display:block; text-align:center;}
+.services article *{margin:0 0 15px 0;}
+.services article > :last-child{margin-bottom:0;}
+.services article .heading{font-size:1.2rem;}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer input, #footer button{border:1px solid;}
+#footer input{display:block; width:100%; padding:8px;}
+#footer button{padding:8px 18px 10px;  font-weight:700; cursor:pointer;}
+#footer img.logo{
+ width: 95px;
+ height: 102px;
+ margin-left: 80px;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:10px; padding:5px; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"HelveticaNeue"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{font-family: HelveticaNeue;
+  font-size: 17px;
+  text-align: center;
+  color: #444444;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:none;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+#mainav button{font-size: 20px;
+color:white;
+width: 150px;
+height: 40px;
+border-radius: 50px;
+background-color: #e66700;
+border: 1px solid #e66700;}
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#inherit; background-color:#353535;}
+.faico a:hover{color:#FFFFFF;}
+
+.faicon-dribble:hover{background-color:#EA4C89;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{font-family: HelveticaNeue;color:#CBCBCB; background-color:#222222;}
+a{color:#00ADEF;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr{display: block;
+	width: 60%;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    margin-left: 415px;
+    margin-right: 350px;
+    border-style: inset;
+    border-width: .5px;} .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#00ADEF;}
+
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.light{color:#474747;}
+.overlay.light::after{background-color:rgba(255,255,255,.9);}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#00ADEF; border-color:#00ADEF;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+blockquote::before{color:rgba(255,255,255,.2);}
+
+.icon{color:#00ADEF; border-color:#D7D7D7;}
+a > .icon:hover, .services article:hover .icon{color:#FFFFFF; background-color:#00ADEF; border-color:#00ADEF;}
+
+/* Rows */
+.row0, .row0 a{color:#474747; background-color:#EFEFEF;}
+.row1{color:#474747; background-color:#FFFFFF;}
+.row2{color:#474747; background-color:#EFEFEF; border-color:#D7D7D7;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#9b9b9b; background-color:#fff;}
+.row5, .row5 a{color:#CBCBCB; background-color:#fff;}
+.row5{border-color:rgba(255,255,255,.1);}
+
+/* Content Area */
+.excerpt .excerpttxt{color:inherit; background-color:#FFFFFF;}
+
+/* Footer */
+#footer .heading{color:#9b9b9b;}
+#footer hr{display: block;
+	width: 80%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 115px;
+    margin-right: 350px;
+    border-style: inset;
+    border-width: .5px;} , #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
+
+#footer input, #footer button{border-color:transparent;}
+#footer input{color:#9b9b9b; background-color:#9b9b9b;}
+#footer input:focus{border-color:#9b9b9b;}
+#footer button{color:#fff;   border-radius: 50px; font-size: 14px; text-align: : center;
+background-color:#e66700;}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#00ADEF; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#00ADEF;}
+#mainav form select{color:#FFFFFF; background-color:#000000;}
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#00ADEF;}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:1278px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:95%;}
+	#topbar{}
+	#header{padding:30px 0 15px;}
+	#header #logo{margin:0;}
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+	.container{}
+	#footer{}
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:10px;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 50px 0; padding:0; text-align: center;}
+
+	#topbar{padding-top:15px; text-align:center;}
+	#topbar ul{margin:0 0 15px 0; line-height:normal;}
+	#header{text-align:center;}
+	#header #logo{margin-bottom:15px;}
+
+	.sectiontitle{max-width:none; text-align:left;}
+}
+
+@media screen and (max-width:450px){
+	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	#pageintro li article{max-width:none; width:100%;}
+	#pageintro li .heading{font-size:1.6rem;}
+}
