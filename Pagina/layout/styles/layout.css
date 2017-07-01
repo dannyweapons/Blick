@@ -7,7 +7,16 @@
 .row0, .row0 a{}
 .row1{border-bottom:1px solid;}
 .row2{border-bottom:1px solid;}
-.row3, .row3 a{}
+.row3, .row3 p{}
+  img{
+   width: 95px;
+   height: 102px;
+  }
+  img.no{
+   width: 95px;
+   height: 132px;
+  }
+
 .row4, .row4 a{}
 .row5{border-top:1px solid;}
 
@@ -93,25 +102,6 @@ border-radius: 50px;
 background-color: #e66700;
 border: 1px solid #e66700;}
 
-
-/* Font Awesome Social Icons
---------------------------------------------------------------------------------------------------------------- */
-.faico{margin:0; padding:0; list-style:none;}
-.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
-.faico li:last-child{margin-right:0;}
-.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
-
-.faico a{color:#inherit; background-color:#353535;}
-.faico a:hover{color:#FFFFFF;}
-
-.faicon-dribble:hover{background-color:#EA4C89;}
-.faicon-facebook:hover{background-color:#3B5998;}
-.faicon-google-plus:hover{background-color:#DB4A39;}
-.faicon-linkedin:hover{background-color:#0E76A8;}
-.faicon-twitter:hover{background-color:#00ACEE;}
-.faicon-vk:hover{background-color:#4E658E;}
-
-
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{font-family: HelveticaNeue;color:#CBCBCB; background-color:#222222;}
@@ -185,13 +175,11 @@ background-color:#e66700;}
 --------------------------------------------------------------------------------------------------------------- */
 @-ms-viewport{width:device-width;}
 
-
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px){
 	.hoc{max-width:1278px;}
 }
-
 
 /* Mobile Devices
 --------------------------------------------------------------------------------------------------------------- */
@@ -213,7 +201,7 @@ background-color:#e66700;}
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:10px;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 50px 0; padding:0; text-align: center;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter, .one_fifth, .one_one{display:block; float:none; width:auto; margin:0 0 50px 0; padding:0; text-align: center;}
 
 	#topbar{padding-top:15px; text-align:center;}
 	#topbar ul{margin:0 0 15px 0; line-height:normal;}
